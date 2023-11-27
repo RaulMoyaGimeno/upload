@@ -1,0 +1,122 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+p {
+  font-size: large;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border: 1px solid blue;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 1;
+    padding: 10px;
+}
+
+
+img{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+}
+
+.vivo img{
+    border: 2px solid red;
+    border-radius: 100%;
+}
+
+.descargado img{
+    border: 2px solid green;
+    border-radius: 100%;
+}
+
+.candidato .nombre {
+    color: green;
+}
+
+.colaborador .nombre {
+    color: orange;
+}
+
+.perpetrador .nombre {
+    color: red;
+}
+
+textarea {
+    height: 80px;
+    width: 300px;
+    resize: none;
+    border-radius: 10px;
+  }
+  
+  button {
+    width: 100px;
+    background-color: blue;
+    border-radius: 10px;
+    border: none;
+    color: white;
+  }
+  
+  button:hover {
+    border: 2px solid darkblue;
+    cursor: pointer;
+  }
+
+  fieldset {
+    border-color: blue;
+    border-radius: 8px;
+    background-color: white;
+    color: blue;
+    width: 200px;
+    text-align: center;
+    left: 37%;
+    position: absolute;
+  }
+
+  input,
+select {
+  width: 300px;
+  border-radius: 10px;
+  background-color: white;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: white blue;
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: blue;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 20px;
+    border: 3px solid blue;
+  }

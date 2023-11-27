@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../model/sujeto.js"></script>
+    <script src="../data/uploadDAO.js"></script>
+    <script src="../js/nuevo.js" defer></script>
+    <script type="module" src="../header/header.js"></script>
+</head>
+<body>
+    <app-header></app-header>
+    <form onsubmit="return false;" id="form">
+        <fieldset>
+            <legend>Nuevo Sujeto</legend>
+        
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" required><br>
+            
+            <label for="vivo" >Vivo:</label>
+            <input type="checkbox" id="vivo" onchange="habilitarFecha()" checked><br>
+
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" value="" required><br>
+
+            <label for="fechaDescarga">Fecha descarga:</label>
+            <input type="date" id="fechaDescarga" disabled><br>
+
+            <label for="culpabilidad">Culpabilidad:</label>
+            <select name="culpabilidad" id="culpabilidad" required>
+                <option value="" selected>Culpabilidad:</option>
+                <option value="candidato">Candidato</option>
+                <option value="colaborador">Colaborador</option>
+                <option value="perpetrador">Perpetrador</option>
+            </select><br><br>
+
+            <label for="img">Url imagen:</label>
+            <input type="text" id="img"><br>
+
+            <label for="comentarios">Comentarios:</label>
+            <br>
+            <textarea id="comentarios" rows="8" cols="50"></textarea><br>
+
+            
+
+            <button type="submit" onclick="guardarSujeto()">Enviar</button>
+        
+        </fieldset>
+    </form>
+    
+</body>
+</html>
